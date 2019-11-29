@@ -1,0 +1,25 @@
+{
+  "name": "test1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ncthbrt/koa-oauth2-introspection-middleware": "^1.0.4",
+    "koa": "^2.8.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "typescript": "^3.7.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.0.50",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/node": "^12.7.11"
+  }
+}

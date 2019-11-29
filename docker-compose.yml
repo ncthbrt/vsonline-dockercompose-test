@@ -1,0 +1,22 @@
+version: "3.7"
+services:
+  api1:
+    build:
+      context: ./src/test1/
+      dockerfile: Dockerfile
+      target: builder
+    ports:
+      - "3000:3000"
+    entrypoint: ["/bin/sh", "-c", "npm run watch"]
+    volumes:
+      - ./src/test1/src/:/app/src/
+  api2:
+    build:
+      context: ./src/test2/
+      dockerfile: Dockerfile
+      target: builder
+    ports:
+      - "3001:3001"
+    entrypoint: ["/bin/sh", "-c", "npm run watch"]
+    volumes:
+      - ./src/test1/src/:/app/src/
